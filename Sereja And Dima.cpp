@@ -17,7 +17,7 @@ int main() {
   }
 
   int s = 0, d = 0, card = 0;
-  bool seraj = true;
+  bool sereja = true;
 
   int l = 0, r = num.size() - 1;
 
@@ -30,12 +30,12 @@ int main() {
       r--;
     }
 
-    if (seraj) {
+    if (sereja) {
       s += card;
     } else {
       d += card;
     }
-    seraj = !seraj;
+    sereja = !sereja;
   }
   cout << s << " " << d << endl;
   return 0;
