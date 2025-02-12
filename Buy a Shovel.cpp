@@ -4,14 +4,16 @@ using namespace std;
 
 int main () {
 
-  int x;
-  set<int> set;
+  int k, r;
+  
+  cin >> k >> r;
 
-  while (cin >> x) {
-    set.insert(x);
+  for (int i = 1; i <= 10; i++) {
+    if (k*i % 10 == 0 || k*i % 10 == r) {
+      cout << i << endl;
+      break;
+    }
   }
-
-  cout << 4 - set.size() << endl;
 
   return 0;
 }
